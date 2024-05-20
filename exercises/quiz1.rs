@@ -13,10 +13,19 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+const APPLE_PRICE: i32 = 2;
+
+fn calculate_price_of_apples(amount:i32) -> i32 {
+    let one_price = if amount > 40 {
+        APPLE_PRICE / 2
+    } else {
+        APPLE_PRICE
+    };
+    println!("amount: {}, one_price: {}", amount, one_price);
+    one_price * amount
+}
 
 // Don't modify this function!
 #[test]
